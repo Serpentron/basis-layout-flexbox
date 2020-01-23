@@ -1,0 +1,46 @@
+body {
+  background-color: pink;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+aside {
+  flex: 1 1 30%;
+  background-color: red;
+  padding: 2rem;
+}
+
+main {
+  flex: 1 1 70%;
+  background-color: blue;
+  padding: 1rem;
+}
+
+.flexible-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid green;
+  display: block;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+  .flex.container {
+    flex-direction: column-reverse;
+  }
+}
+/*# sourceMappingURL=style.css.map */
